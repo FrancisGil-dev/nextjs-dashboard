@@ -1,9 +1,9 @@
 import '@/app/ui/global.css'
 
-import {Inter} from 'next/font/google';
+import {Poppins} from 'next/font/google';
 
 // create variable from Inter
-export const inter = Inter({
+export const poppins =Poppins({
   subsets: ['latin'],
   weight: ['100', '300', '500', '700', '900']
 })
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }
